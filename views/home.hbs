@@ -5,9 +5,9 @@
 		<title>Some Website</title>
 	</head>
 	<body>
-		<h1>{{pageTitle}}</h1>
-		<p> <h2>{{welcomeNote}}</h2></p>
+		{{> headder}}
+		<p> <h2>{{streanIn welcomeNote}}</h2></p>
 
-		<fotter>Copyright {{currentYear}}</fotter>
+		{{> fotter}}
 	</body>
 </html>
