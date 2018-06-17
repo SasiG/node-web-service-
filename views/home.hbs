@@ -5,10 +5,12 @@
 		<title>Some Website</title>
 	</head>
 	<body>
+		{{> headder}}
+		<p> <h2>{{streanIn welcomeNote}}</h2></p>
 		<h1>{{pageTitle}}</h1>
 		<h1>Hello World</h1>
 		<p> <h2>{{welcomeNote}}</h2></p>
 
-		<fotter>Copyright {{currentYear}}</fotter>
+		{{> fotter}}
 	</body>
 </html>
