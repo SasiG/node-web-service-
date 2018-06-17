@@ -39,7 +39,7 @@ app.get('/', (req, res) =>{
  	pageTitle: 'Home Page',
  	welcomeNote: 'Welcome to Website hope you enjoy it',
  	currentYear: new Date().getFullYear()
- })
+ });
  
 });
 
@@ -49,6 +49,14 @@ app.get('/about', (req, res) =>{
 		currentYear: new Date().getFullYear()
 	});
 });
+
+app.get('/project', (req, res) =>{
+	res.render('project.hbs',{
+		pageTitle: 'Projects',
+		currentYear: new Date().getFullYear()
+	});
+});
+
 
 app.get('/bad', (req, res) =>{
 res.send({
